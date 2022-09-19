@@ -1,0 +1,21 @@
+.title{
+    text-align: center;
+    background-color: rgb(235, 210, 143);
+    margin-bottom: unset;
+    position: relative;
+  height: 7mm;
+}
+.footer{
+    text-align: center;
+    background-color: gray;
+    color:bisque;
+    margin-bottom: unset;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%
+    }
+.nav-item:hover{
+background-color: rgb(182, 181, 179);
+text-size-adjust: inherit;
+}

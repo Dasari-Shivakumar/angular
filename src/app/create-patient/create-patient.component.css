@@ -1,0 +1,24 @@
+.form-group{
+  color:grey;
+  border-color: lightsalmon;
+   box-shadow:lightblue;
+  margin: 5px;
+
+ }
+input[type=text], select{
+ width: 100%;
+ box-sizing: border-box;
+ border: 2px solid #ccc;
+ border-radius: 2px;
+ font-size: 13px;
+ background-color: white;
+ padding: 6px ;
+}
+input[type=submit]:hover{
+ background-color: #4CAF50;
+color: white;
+}
+div {
+  
+ border-radius: 2px;
+}

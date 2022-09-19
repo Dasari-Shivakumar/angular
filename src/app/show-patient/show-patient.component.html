@@ -1,0 +1,52 @@
+<div className="App">
+    <section id="home" class="hero-section">
+      
+      <div class="container">
+       
+                <h4 style="text-align: center;color: tan;"> Patient Details</h4>
+
+                
+                <div class="table-wrapper">
+                  <input  type="text"  placeholder="Enter Patient Id" [(ngModel)]="patientId">
+                <button class="submit" type="submit" (click)="getPatientDetails(patientId)">Submit</button>
+                  <table class="fl-table" >
+                    <thead>
+                      <tr>
+                        <th>Patient Id</th>
+                        <th>Patient Name</th>
+                        <th>Age</th>
+                        <th>Date of Visit</th>
+                        <th>Visited Doctor</th>
+                        <th>Precription</th>
+                       
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngIf="patients; else elseblock">
+                        <td>{{ patients.id}}</td>
+                        <td>{{ patients.name }}</td>
+                        <td>{{ patients.age }}</td>
+                        <td>{{ patients.dateOfVisit }}</td>
+                        <td>{{ patients.visitedDoctor }}</td>
+                        <td>{{ patients.prescription }}</td>
+                       
+                        </tr>
+                      <ng-template #elseblock>
+                        <tr>
+                          <td colspan="6">{{errorMessage}}</td>
+                        </tr>
+                      </ng-template>
+                    </tbody>
+  
+                    <tbody></tbody>
+                  </table>
+                  <button class="btn"type="submit" (click)="goback()">Go Back</button>
+                </div>
+                
+              </div>
+              
+  
+         
+    </section>
+  </div>

@@ -1,0 +1,11 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body
+{
+    background-color: #537572;
+    background-image: url("./assets/hospital.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}

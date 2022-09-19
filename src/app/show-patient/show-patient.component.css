@@ -1,0 +1,35 @@
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow:lightblue;
+}
+.fl-table{
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: transparent;
+    padding: 5%;
+    margin-block: inherit;
+}
+.head{
+    text-align: center;
+     color: darkorange;
+     font-family:'Times New Roman', Times, serif;
+}
+.container{
+    background-color:beige;
+    color: cadetblue;
+    
+}
+.btn:hover{
+    background-color:lightgreen;
+   
+}
+.submit:hover{
+background-color: rgb(213, 231, 133);
+
+}

@@ -1,0 +1,14 @@
+.text{
+    color: darkgoldenrod
+}
+.footer{
+text-align: center;
+padding: 3px;
+background-color: DarkSalmon;
+color: white;
+margin-bottom: unset;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+}

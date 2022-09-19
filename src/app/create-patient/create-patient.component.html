@@ -1,0 +1,73 @@
+<div class="col-md-6 offset-md-4">
+<div className="App">
+      <section id="home" class="hero-section">
+     
+      <div style="text-align: center">
+        <h3 style="color: brown;">{{message}}</h3>
+    </div>
+      <div class="container form-container">
+        <div class="row align-items-center ">
+          <div class="col-lg-6">
+            <div class="hero-content">
+  
+              <form >
+                <div class="  text-center ">
+                    <h5 style="color: mediumseagreen;">Patient Registration</h5>
+                </div>
+                <fieldset class="link">  
+                        <div class="form-group">
+                        <label for="Name"><span class="req"> </span>Name</label>
+                        <input required type="text" [(ngModel)]="patient.name"  name="patientName" id="patientName"class="form-control phone" maxlength="28" placeholder="Enter your Name" />
+                    </div>
+                    <div class="form-group">
+                      <label for="Age"><span class="req"></span> Age </label>
+                      <input class="form-control" type="number"[(ngModel)]="patient.age"   name="Age" id="Age" required
+                          placeholder="Enter Age" />
+                      
+                  </div>
+                    <div class="form-group">
+                        <label for="dateOfVisit"><span class="req"> </span>Date of Visit</label>
+                        <input required type="date" [(ngModel)]="patient.dateOfVisit"  name="dateOfVisit" id="dateOfVisit" class="form-control phone" maxlength="28" placeholder="Patient date of vist" />
+                    </div>
+                    <div class="form-group">
+                      <label for="precription"><span class="req"> </span>  Prescription  </label>
+                      <input required type="text" [(ngModel)]="patient.prescription"  name="precription" id="precription"
+                          class="form-control phone" maxlength="28" placeholder="Enter prescription" />
+                  </div>
+                    <div class="form-group">
+                        <label for="visitedDoctor"><span class="req"> </span> Select Vistited Doctor</label>
+  
+                        <select class="hideLabel form-control" [(ngModel)]="patient.visitedDoctor" name="Id" (change)="selectName(patient.doctorId);">  
+                          <option selected="" value=""></option>  
+                       <option [ngValue]="k.name" *ngFor="let k of doctors">  
+                           {{k.name}}  
+                    </option>  
+               </select> 
+                      
+                    </div>
+                    
+  
+                    <div class="form-group">
+                        <label for="doctId"><span class="req"></span>  Doctors Id  </label>
+                        <input class="form-control" type="number"[(ngModel)]="patient.doctorId"   name="doctId" id="doctId" required
+                            placeholder="Enter Visited Doctors ID" />
+                        
+                    </div>
+  
+                   
+  
+                    <div class="form-group">
+                        <input class="btn btn-primary main-btn reg-btn" type="submit" name="submit_reg" value="Register" (click)="registerPatNow()" >
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+          </div>
+          <div class="col-lg-3">
+          
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  </div><br>
